@@ -9,6 +9,8 @@ const searchGif = document.getElementById('search')
             })
             .then(function(response) {
                 img.src = (response.data.images.original.url);
+                img.style.display = 'flex'
+            
             });
             
         }
